@@ -1,36 +1,31 @@
 # def-fn
 
-FIXME: description
+NOTE: Suppors only Clojurescript currently
+
+Def-fn is a macro that acts like a defn but requires map as its first argument.
+
+``` clojure
+(def-fn func [{:keys [first second third] :or {third 3}} ...]
+  [first second third])
+```
+
+Argument use is checked at compile time instead of runtime. func requires `first` and `second` to be defined at call-site but since `third` is defined as optional it is not required.
+
+``` clojure
+(func {:first 1
+       :second 2})
+```
 
 ## Installation
 
-Download from http://example.com/FIXME.
+TODO: clojars
 
-## Usage
-
-FIXME: explanation
-
-    $ java -jar def-fn-0.1.0-standalone.jar [args]
-
-## Options
-
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
+## Status
+Early stage testing. Code is public but is still under testing by the author and subject to change.
 
 ## License
 
-Copyright © 2024 FIXME
+Copyright © 2024 Lari Saukkonen
 
 This program and the accompanying materials are made available under the
 terms of the Eclipse Public License 2.0 which is available at
