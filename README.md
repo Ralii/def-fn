@@ -1,6 +1,6 @@
 # def-fn
 
-NOTE: Suppors only Clojurescript currently
+NOTE: OBSOLETE. It relied heavily on shadow-cljs `:root-source-form` information that has been removed from the update. I will leave the code incase someone finds it useful for some other purpose. Check my other library for a bit similar functionality that relies on malli: [defnk!](https://github.com/Ralii/defnk)
 
 Def-fn is a macro that acts like a defn but requires map as its first argument.
 
